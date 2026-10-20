@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-obsidian: #070A0F;
+  --bg-panel: #0D121B;
+  --bg-surface: #131B28;
+  --xray-cyan: #00F0FF;
+  --xray-amber: #FFB800;
+  --xray-crimson: #FF2E54;
+  --xray-emerald: #00E599;
+}
+
+body {
+  background-color: #070A0F;
+  color: #E6EDF7;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+}
+
+/* Precision Radiography Grid Background */
+.xray-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Subtle diagonal scanline pattern for X-Ray revealed layer */
+.xray-scanline-surface {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(0, 240, 255, 0.035),
+    rgba(0, 240, 255, 0.035) 6px,
+    rgba(7, 10, 15, 0.96) 6px,
+    rgba(7, 10, 15, 0.96) 12px
+  );
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070A0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+}

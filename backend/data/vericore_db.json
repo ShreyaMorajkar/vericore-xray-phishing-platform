@@ -1,0 +1,5167 @@
+{
+  "users": [
+    {
+      "id": "usr-analyst-01",
+      "name": "Shreya (Security Analyst)",
+      "email": "analyst@vericore.sec",
+      "password": "$2a$08$avEOgG4iAHg1TU/RpMy6oOnfmlBOKx9TY2e.L0OZD2QKzXXSCodHa",
+      "role": "user",
+      "status": "active",
+      "cyber_hygiene_score": 92,
+      "created_at": "2026-10-05T10:15:00Z"
+    },
+    {
+      "id": "usr-admin-01",
+      "name": "Commander Vance (SOC Lead)",
+      "email": "admin@vericore.sec",
+      "password": "$2a$08$avEOgG4iAHg1TU/RpMy6oOnfmlBOKx9TY2e.L0OZD2QKzXXSCodHa",
+      "role": "admin",
+      "status": "active",
+      "cyber_hygiene_score": 99,
+      "created_at": "2026-10-01T08:00:00Z"
+    },
+    {
+      "id": "usr-emp-02",
+      "name": "Rohan Mehta (Finance Ops)",
+      "email": "rohan.m@enterprise.org",
+      "password": "$2a$08$avEOgG4iAHg1TU/RpMy6oOnfmlBOKx9TY2e.L0OZD2QKzXXSCodHa",
+      "role": "user",
+      "status": "active",
+      "cyber_hygiene_score": 74,
+      "created_at": "2026-10-11T14:22:00Z"
+    },
+    {
+      "id": "usr-emp-03",
+      "name": "Elena Rostova (DevSecOps)",
+      "email": "elena@enterprise.org",
+      "password": "$2a$08$avEOgG4iAHg1TU/RpMy6oOnfmlBOKx9TY2e.L0OZD2QKzXXSCodHa",
+      "role": "user",
+      "status": "active",
+      "cyber_hygiene_score": 88,
+      "created_at": "2026-10-14T11:05:00Z"
+    }
+  ],
+  "scan_history": [
+    {
+      "id": "scan-1792509931157",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://github.com/security/advisories",
+      "result": "Verified Benign // No Deception Vectors Found",
+      "risk_level": "LOW",
+      "risk_score": 4,
+      "naive_scanner_score": 4,
+      "recommendation": "Safe to proceed. Domain structure, character encoding, and cryptographic headers show no manipulation.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://github.com/security/advisories",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "GitHub",
+            "pageHeadline": "Sign in to your GitHub account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://github.com/security/advisories",
+              "xrayReveals": "HTTPS // Registrable Root: github.com | DNS: Unresolved",
+              "severity": "SAFE",
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            },
+            {
+              "id": "hs-content-clean",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "https://github.com/security/advisories",
+              "xrayReveals": "[LINGUISTIC SCAN CLEAN] Zero coercive, fear-inducing, or credential-harvesting phrases detected.",
+              "severity": "SAFE",
+              "explanation": "Evaluates whether attacker intentionally stripped spam keywords to bypass naive filters."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "b",
+                "codePoint": "U+0062",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "b"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "github.com",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "GitHub",
+              "officialDomain": "github.com",
+              "impersonationType": "OFFICIAL_VERIFIED",
+              "distance": 0,
+              "isImpersonation": false,
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            }
+          },
+          "inlineHighlights": [],
+          "matchedKeywordCount": 0
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "github.com",
+              "status": "SAFE",
+              "detail": "Core registrable destination domain."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".com",
+              "status": "SAFE",
+              "detail": "Standard registry TLD (.com)."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/security/advisories",
+              "status": "SAFE",
+              "detail": "Standard resource route."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 3.32,
+            "payloadEntropy": 4.09,
+            "dgaLikelihood": "MODERATE",
+            "urlLength": 38,
+            "subdomainDepth": 1,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 30,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 0,
+            "suspicious": 0,
+            "harmless": 86,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": []
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "CLEAN",
+            "threatType": "NONE",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 4,
+            "vericoreXrayScore": 4,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "NO_EVASION_DETECTED: Artifact passes structural and lexical authenticity checks."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://github[.]com/security/advisories",
+            "domain": "github[.]com",
+            "firewallRule": "deny tcp any host github.com # VERICORE AUTO-RULE (LOW)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:25:31.157Z"
+    },
+    {
+      "id": "scan-1792509929122",
+      "user_id": "usr-analyst-01",
+      "scan_type": "header",
+      "content": "From: Vikram Singhania (CEO) <v.singhania@acmecorp.com>\nReturn-Path: <mailer-daemon@swift-invoice-relay.ru>\nReply-To: <v.singhania.exec@gmail-corporate.xyz>\nAuthentication-Results: mx.enterprise.local; spf=softfail; dkim=fail; dmarc=fail\nSubject: Confidential Q4 Vendor Settlement — Wire Transfer Today\n\nHi Finance Team,\nAre you at your desk? We need to close the confidential acquisition escrow before 4 PM. Please process the wire transfer for the attached vendor coordinates and confirm your identity code once queued.",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 77,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "Vikram Singhania (CEO) <v.singhania@acmecorp.com>",
+            "subject": "Confidential Q4 Vendor Settlement — Wire Transfer Today",
+            "previewBody": "From: Vikram Singhania (CEO) <v.singhania@acmecorp.com>\nReturn-Path: <mailer-daemon@swift-invoice-relay.ru>\nReply-To: <v.singhania.exec@gmail-corporate.xyz>\nAuthentication-Results: mx.enterprise.local; spf=softfail; dkim=fail; dmarc=fail\nSubject: Confidential Q4 Vendor Settlement — Wire Transfer Today\n\nHi Finance Team,\nAre you at your desk? We need to close the confidential acquisition escrow before 4 PM. Please process the wire transfer for the attached vendor coordinates and confirm your identity code once queued.",
+            "ctaUrl": "https://portal-verification-session.top/login"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: Vikram Singhania (CEO) <v.singhania@acmecorp.com>",
+              "xrayReveals": "SPOOFED ENVELOPE! Return-Path: <mailer-daemon@swift-invoice-relay.ru> [SPF: FAIL | DMARC: FAIL (Reject/Quarantine)]",
+              "severity": "CRITICAL",
+              "explanation": "The display sender address does not match the actual SMTP server Return-Path that transmitted the message."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"confirm your identity\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +20 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"confirm your identity\").",
+              "severity": "WARN",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"confirm your identity\")."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"Wire Transfer\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +24 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\").",
+              "severity": "CRITICAL",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\")."
+            },
+            {
+              "id": "hs-kw-2",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".xyz\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +18 RISK] — High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns."
+            },
+            {
+              "id": "hs-kw-3",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".ru\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +15 RISK] — High-abuse top-level domain (\".ru\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".ru\") favored by disposable phishing campaigns."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 75
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 97
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 66
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "",
+            "subdomains": "",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "confirm your identity",
+              "category": "CREDENTIAL",
+              "weight": 20,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"confirm your identity\")."
+            },
+            {
+              "phrase": "Wire Transfer",
+              "category": "CREDENTIAL",
+              "weight": 24,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\")."
+            },
+            {
+              "phrase": ".xyz",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 18,
+              "explanation": "High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns."
+            },
+            {
+              "phrase": ".ru",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 15,
+              "explanation": "High-abuse top-level domain (\".ru\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 4
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [],
+          "entropy": {
+            "hostnameEntropy": 0,
+            "payloadEntropy": 5,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 0,
+            "subdomainDepth": 0,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 30,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": true,
+            "fromRaw": "Vikram Singhania (CEO) <v.singhania@acmecorp.com>",
+            "fromDomain": "acmecorp.com",
+            "returnPathRaw": "<mailer-daemon@swift-invoice-relay.ru>",
+            "returnPathDomain": "swift-invoice-relay.ru",
+            "replyToRaw": "<v.singhania.exec@gmail-corporate.xyz>",
+            "replyToDomain": "gmail-corporate.xyz",
+            "subjectRaw": "Confidential Q4 Vendor Settlement — Wire Transfer Today",
+            "spfStatus": "FAIL",
+            "dkimStatus": "FAIL",
+            "dmarcStatus": "FAIL (Reject/Quarantine)",
+            "envelopeMismatch": true,
+            "replyToMismatch": true,
+            "hops": [
+              "from mail-gateway.external (acmecorp.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 77,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 22,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "ENVELOPE_SENDER_SPOOF: Display \"From\" (acmecorp.com) conflicts with actual SMTP \"Return-Path\" (swift-invoice-relay.ru).",
+              "REPLY_TO_HIJACK: Replies are silently diverted to external domain \"gmail-corporate.xyz\"."
+            ]
+          },
+          "defangedIoc": {
+            "url": "From: Vikram Singhania (CEO) <v[.]singhania@acmecorp[.]com>\nReturn-Path: <mailer-daemon@swift-invoice-re",
+            "domain": "acmecorp[.]com",
+            "firewallRule": "reject smtp sender acmecorp.com # VERICORE AUTO-RULE"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:25:29.122Z"
+    },
+    {
+      "id": "scan-1792509926804",
+      "user_id": "usr-analyst-01",
+      "scan_type": "email",
+      "content": "Your bank account will be suspended. Verify immediately.",
+      "result": "Suspicious Artifact // High Deception Probability",
+      "risk_level": "HIGH",
+      "risk_score": 68,
+      "naive_scanner_score": 72,
+      "recommendation": "Avoid interacting with links or attachments. Verify sender out-of-band via an official bookmarked website.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "Security Team <no-reply@notice-alert.com>",
+            "subject": "Important Account Notification",
+            "previewBody": "Your bank account will be suspended. Verify immediately.",
+            "ctaUrl": "https://portal-verification-session.top/login"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: Security Team <no-reply@notice-alert.com>",
+              "xrayReveals": "SMTP Return-Path: <bounce@notice-alert.com> [SPF: NEUTRAL / UNVERIFIED]",
+              "severity": "WARN",
+              "explanation": "Sender header inspected against Return-Path and SPF/DMARC alignment."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"Verify immediately\"",
+              "xrayReveals": "[URGENCY MANIPULATION +28 RISK] — Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender.",
+              "severity": "CRITICAL",
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"suspended\"",
+              "xrayReveals": "[FEAR MANIPULATION +24 RISK] — Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking.",
+              "severity": "CRITICAL",
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "id": "hs-kw-2",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"bank account\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +20 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"bank account\").",
+              "severity": "WARN",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"bank account\")."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 62
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 53
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 44
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "",
+            "subdomains": "",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "Verify immediately",
+              "category": "URGENCY",
+              "weight": 28,
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "phrase": "suspended",
+              "category": "FEAR",
+              "weight": 24,
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "phrase": "bank account",
+              "category": "CREDENTIAL",
+              "weight": 20,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"bank account\")."
+            }
+          ],
+          "matchedKeywordCount": 3
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [],
+          "entropy": {
+            "hostnameEntropy": 0,
+            "payloadEntropy": 4.29,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 0,
+            "subdomainDepth": 0,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 31,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 6,
+            "suspicious": 4,
+            "harmless": 76,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 72,
+            "vericoreXrayScore": 68,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "MULTI_VECTOR_SOCIAL_ENGINEERING: Combines urgency framing with credential harvesting prompts."
+            ]
+          },
+          "defangedIoc": {
+            "url": "Your bank account will be suspended[.] Verify immediately[.]",
+            "domain": "notice-alert[.]com",
+            "firewallRule": "reject smtp sender notice-alert.com # VERICORE AUTO-RULE"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:25:26.804Z"
+    },
+    {
+      "id": "scan-1792509925346",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "http://secure-paypal-login-free.com",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 68,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "http://secure-paypal-login-free.com",
+            "protocolBadge": "Unencrypted HTTP Connection",
+            "brandClaimed": "PayPal",
+            "pageHeadline": "Sign in to your PayPal account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "http://secure-paypal-login-free.com",
+              "xrayReveals": "BRAND IMPERSONATION! Claims PayPal (paypal.com) -> Actual Destination: secure-paypal-login-free.com",
+              "severity": "CRITICAL",
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"secure-paypal\"",
+              "xrayReveals": "[URL_TOKEN MANIPULATION +26 RISK] — Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits.",
+              "severity": "CRITICAL",
+              "explanation": "Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"login-free\"",
+              "xrayReveals": "[URL_TOKEN MANIPULATION +22 RISK] — Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits.",
+              "severity": "CRITICAL",
+              "explanation": "Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 45
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "f",
+                "codePoint": "U+0066",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "f"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "secure-paypal-login-free.com",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "COMBO_SQUATTING",
+              "distance": 18,
+              "isImpersonation": true,
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "secure-paypal",
+              "category": "URL_TOKEN",
+              "weight": 26,
+              "explanation": "Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits."
+            },
+            {
+              "phrase": "login-free",
+              "category": "URL_TOKEN",
+              "weight": 22,
+              "explanation": "Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits."
+            }
+          ],
+          "matchedKeywordCount": 2
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "http://",
+              "status": "WARN",
+              "detail": "Unencrypted plaintext HTTP transport; credentials travel in cleartext."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "secure-paypal-login-free.com",
+              "status": "CRITICAL",
+              "detail": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".com",
+              "status": "SAFE",
+              "detail": "Standard registry TLD (.com)."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 3.92,
+            "payloadEntropy": 4.23,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 35,
+            "subdomainDepth": 1,
+            "hyphenCount": 3
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 28,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 68,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 31,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "MULTI_VECTOR_SOCIAL_ENGINEERING: Combines urgency framing with credential harvesting prompts."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxp://secure-paypal-login-free[.]com",
+            "domain": "secure-paypal-login-free[.]com",
+            "firewallRule": "deny tcp any host secure-paypal-login-free.com # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:25:25.346Z"
+    },
+    {
+      "id": "scan-1792509915814",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 20,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "PayPal",
+            "pageHeadline": "Sign in to your PayPal account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+              "xrayReveals": "IDN HOMOGRAPH TRAP! Contains non-Latin 'а' (U+0430) mimicking PayPal -> Real Host: secure-session-auth.top",
+              "severity": "CRITICAL",
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".top\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +20 RISK] — High-abuse top-level domain (\".top\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 45
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "а",
+                "codePoint": "U+0430",
+                "isSpoof": true,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              }
+            ],
+            "unicodeSpoofs": [
+              {
+                "index": 1,
+                "char": "а",
+                "codePoint": "U+0430",
+                "looksLike": "a",
+                "description": "Cyrillic Small Letter A (U+0430)"
+              }
+            ],
+            "isPunycode": true,
+            "regDomain": "secure-session-auth.top",
+            "subdomains": "pаypal.com",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "IDN_HOMOGRAPH_SPOOF",
+              "distance": 18,
+              "isImpersonation": true,
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": ".top",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 20,
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 1
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "SUBDOMAIN CHAIN",
+              "value": "pаypal.com",
+              "status": "WARN",
+              "detail": "Prefix hierarchy controlled by the registrable root domain."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "secure-session-auth.top",
+              "status": "CRITICAL",
+              "detail": "Contains non-ASCII homoglyph characters to spoof visual identity."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".top",
+              "status": "CRITICAL",
+              "detail": "High-risk TLD (.top) with elevated phishing-to-legitimate domain ratio."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/myaccount/verify",
+              "status": "WARN",
+              "detail": "Path targets authentication or credential-entry workflow."
+            },
+            {
+              "part": "QUERY / TRACKING PAYLOAD",
+              "value": "?session=99812",
+              "status": "WARN",
+              "detail": "URL query string parameters."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 4.09,
+            "payloadEntropy": 4.53,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 73,
+            "subdomainDepth": 3,
+            "hyphenCount": 5
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 54,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 20,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 79,
+            "bypassedNaiveScanner": true,
+            "evasionFlags": [
+              "HTTPS_TLS_ILLUSION: Uses HTTPS encryption on a deceptive domain to appear \"Padlock Safe\".",
+              "IDN_HOMOGRAPH_EVASION: Uses non-Latin lookalike characters that bypass ASCII keyword filters."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://pаypal[.]com[.]secure-session-auth[.]top/myaccount/verify?session=99812",
+            "domain": "xn--pypal-4ve[.]com[.]secure-session-auth[.]top",
+            "firewallRule": "deny tcp any host xn--pypal-4ve.com.secure-session-auth.top # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:25:15.814Z"
+    },
+    {
+      "id": "scan-1792509253683",
+      "user_id": "usr-analyst-01",
+      "scan_type": "email",
+      "content": "Please review this e2e-phish-token-1792509253645 immediately.",
+      "result": "Caution Advised // Anomalous Signals Detected",
+      "risk_level": "MEDIUM",
+      "risk_score": 33,
+      "naive_scanner_score": 35,
+      "recommendation": "Proceed with caution. Inspect domain ownership and sender SPF/DKIM alignment before submitting sensitive data.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "Security Team <no-reply@notice-alert.com>",
+            "subject": "Important Account Notification",
+            "previewBody": "Please review this e2e-phish-token-1792509253645 immediately.",
+            "ctaUrl": "https://portal-verification-session.top/login"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: Security Team <no-reply@notice-alert.com>",
+              "xrayReveals": "SMTP Return-Path: <bounce@notice-alert.com> [SPF: NEUTRAL / UNVERIFIED]",
+              "severity": "SAFE",
+              "explanation": "Sender header inspected against Return-Path and SPF/DMARC alignment."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"e2e-phish-token-1792509253645\"",
+              "xrayReveals": "[URGENCY MANIPULATION +35 RISK] — Creates artificial time pressure (\"e2e-phish-token-1792509253645\") to panic the victim into acting before verifying the sender.",
+              "severity": "CRITICAL",
+              "explanation": "Creates artificial time pressure (\"e2e-phish-token-1792509253645\") to panic the victim into acting before verifying the sender."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 77
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "",
+            "subdomains": "",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "e2e-phish-token-1792509253645",
+              "category": "URGENCY",
+              "weight": 35,
+              "explanation": "Creates artificial time pressure (\"e2e-phish-token-1792509253645\") to panic the victim into acting before verifying the sender."
+            }
+          ],
+          "matchedKeywordCount": 1
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [],
+          "entropy": {
+            "hostnameEntropy": 0,
+            "payloadEntropy": 4.54,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 0,
+            "subdomainDepth": 0,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 23,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 0,
+            "suspicious": 0,
+            "harmless": 86,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": []
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "CLEAN",
+            "threatType": "NONE",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 35,
+            "vericoreXrayScore": 33,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "NO_EVASION_DETECTED: Artifact passes structural and lexical authenticity checks."
+            ]
+          },
+          "defangedIoc": {
+            "url": "Please review this e2e-phish-token-1792509253645 immediately[.]",
+            "domain": "notice-alert[.]com",
+            "firewallRule": "reject smtp sender notice-alert.com # VERICORE AUTO-RULE"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.683Z"
+    },
+    {
+      "id": "scan-1792509253603",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://github.com/security",
+      "result": "Verified Benign // No Deception Vectors Found",
+      "risk_level": "LOW",
+      "risk_score": 4,
+      "naive_scanner_score": 4,
+      "recommendation": "Safe to proceed. Domain structure, character encoding, and cryptographic headers show no manipulation.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://github.com/security",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "GitHub",
+            "pageHeadline": "Sign in to your GitHub account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://github.com/security",
+              "xrayReveals": "HTTPS // Registrable Root: github.com | DNS: Unresolved",
+              "severity": "SAFE",
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            },
+            {
+              "id": "hs-content-clean",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "https://github.com/security",
+              "xrayReveals": "[LINGUISTIC SCAN CLEAN] Zero coercive, fear-inducing, or credential-harvesting phrases detected.",
+              "severity": "SAFE",
+              "explanation": "Evaluates whether attacker intentionally stripped spam keywords to bypass naive filters."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "b",
+                "codePoint": "U+0062",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "b"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "github.com",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "GitHub",
+              "officialDomain": "github.com",
+              "impersonationType": "OFFICIAL_VERIFIED",
+              "distance": 0,
+              "isImpersonation": false,
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            }
+          },
+          "inlineHighlights": [],
+          "matchedKeywordCount": 0
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "github.com",
+              "status": "SAFE",
+              "detail": "Core registrable destination domain."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".com",
+              "status": "SAFE",
+              "detail": "Standard registry TLD (.com)."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/security",
+              "status": "SAFE",
+              "detail": "Standard resource route."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 3.32,
+            "payloadEntropy": 3.91,
+            "dgaLikelihood": "MODERATE",
+            "urlLength": 27,
+            "subdomainDepth": 1,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 27,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 0,
+            "suspicious": 0,
+            "harmless": 86,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": []
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "CLEAN",
+            "threatType": "NONE",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 4,
+            "vericoreXrayScore": 4,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "NO_EVASION_DETECTED: Artifact passes structural and lexical authenticity checks."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://github[.]com/security",
+            "domain": "github[.]com",
+            "firewallRule": "deny tcp any host github.com # VERICORE AUTO-RULE (LOW)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.603Z"
+    },
+    {
+      "id": "scan-1792509253562",
+      "user_id": "usr-analyst-01",
+      "scan_type": "header",
+      "content": "From: CEO <ceo@acmecorp.com>\nReturn-Path: <spoof@evil-relay.xyz>\nReply-To: <hacker@offshore.top>\nAuthentication-Results: mx.google.com; spf=fail; dkim=fail; dmarc=fail\nSubject: Urgent wire transfer",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 62,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "CEO <ceo@acmecorp.com>",
+            "subject": "Urgent wire transfer",
+            "previewBody": "From: CEO <ceo@acmecorp.com>\nReturn-Path: <spoof@evil-relay.xyz>\nReply-To: <hacker@offshore.top>\nAuthentication-Results: mx.google.com; spf=fail; dkim=fail; dmarc=fail\nSubject: Urgent wire transfer",
+            "ctaUrl": "https://portal-verification-session.top/login"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: CEO <ceo@acmecorp.com>",
+              "xrayReveals": "SPOOFED ENVELOPE! Return-Path: <spoof@evil-relay.xyz> [SPF: FAIL | DMARC: FAIL (Reject/Quarantine)]",
+              "severity": "CRITICAL",
+              "explanation": "The display sender address does not match the actual SMTP server Return-Path that transmitted the message."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"wire transfer\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +24 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\").",
+              "severity": "CRITICAL",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\")."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".xyz\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +18 RISK] — High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns."
+            },
+            {
+              "id": "hs-kw-2",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".top\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +20 RISK] — High-abuse top-level domain (\".top\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 75
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 53
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 76
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "",
+            "subdomains": "",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "wire transfer",
+              "category": "CREDENTIAL",
+              "weight": 24,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"wire transfer\")."
+            },
+            {
+              "phrase": ".xyz",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 18,
+              "explanation": "High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns."
+            },
+            {
+              "phrase": ".top",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 20,
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 3
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [],
+          "entropy": {
+            "hostnameEntropy": 0,
+            "payloadEntropy": 5.02,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 0,
+            "subdomainDepth": 0,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 23,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": true,
+            "fromRaw": "CEO <ceo@acmecorp.com>",
+            "fromDomain": "acmecorp.com",
+            "returnPathRaw": "<spoof@evil-relay.xyz>",
+            "returnPathDomain": "evil-relay.xyz",
+            "replyToRaw": "<hacker@offshore.top>",
+            "replyToDomain": "offshore.top",
+            "subjectRaw": "Urgent wire transfer",
+            "spfStatus": "FAIL",
+            "dkimStatus": "FAIL",
+            "dmarcStatus": "FAIL (Reject/Quarantine)",
+            "envelopeMismatch": true,
+            "replyToMismatch": true,
+            "hops": [
+              "from mail-gateway.external (acmecorp.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 62,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 37,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "ENVELOPE_SENDER_SPOOF: Display \"From\" (acmecorp.com) conflicts with actual SMTP \"Return-Path\" (evil-relay.xyz).",
+              "REPLY_TO_HIJACK: Replies are silently diverted to external domain \"offshore.top\"."
+            ]
+          },
+          "defangedIoc": {
+            "url": "From: CEO <ceo@acmecorp[.]com>\nReturn-Path: <spoof@evil-relay[.]xyz>\nReply-To: <hacker@offshore[.]top>\nAut",
+            "domain": "acmecorp[.]com",
+            "firewallRule": "reject smtp sender acmecorp.com # VERICORE AUTO-RULE"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.562Z"
+    },
+    {
+      "id": "scan-1792509253528",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://pаypal.com.secure-session-auth.top/myaccount/verify",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 20,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://pаypal.com.secure-session-auth.top/myaccount/verify",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "PayPal",
+            "pageHeadline": "Sign in to your PayPal account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://pаypal.com.secure-session-auth.top/myaccount/verify",
+              "xrayReveals": "IDN HOMOGRAPH TRAP! Contains non-Latin 'а' (U+0430) mimicking PayPal -> Real Host: secure-session-auth.top",
+              "severity": "CRITICAL",
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".top\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +20 RISK] — High-abuse top-level domain (\".top\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 45
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "а",
+                "codePoint": "U+0430",
+                "isSpoof": true,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              }
+            ],
+            "unicodeSpoofs": [
+              {
+                "index": 1,
+                "char": "а",
+                "codePoint": "U+0430",
+                "looksLike": "a",
+                "description": "Cyrillic Small Letter A (U+0430)"
+              }
+            ],
+            "isPunycode": true,
+            "regDomain": "secure-session-auth.top",
+            "subdomains": "pаypal.com",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "IDN_HOMOGRAPH_SPOOF",
+              "distance": 18,
+              "isImpersonation": true,
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": ".top",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 20,
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 1
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "SUBDOMAIN CHAIN",
+              "value": "pаypal.com",
+              "status": "WARN",
+              "detail": "Prefix hierarchy controlled by the registrable root domain."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "secure-session-auth.top",
+              "status": "CRITICAL",
+              "detail": "Contains non-ASCII homoglyph characters to spoof visual identity."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".top",
+              "status": "CRITICAL",
+              "detail": "High-risk TLD (.top) with elevated phishing-to-legitimate domain ratio."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/myaccount/verify",
+              "status": "WARN",
+              "detail": "Path targets authentication or credential-entry workflow."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 4.09,
+            "payloadEntropy": 4.29,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 59,
+            "subdomainDepth": 3,
+            "hyphenCount": 5
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 31,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 20,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 79,
+            "bypassedNaiveScanner": true,
+            "evasionFlags": [
+              "HTTPS_TLS_ILLUSION: Uses HTTPS encryption on a deceptive domain to appear \"Padlock Safe\".",
+              "IDN_HOMOGRAPH_EVASION: Uses non-Latin lookalike characters that bypass ASCII keyword filters."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://pаypal[.]com[.]secure-session-auth[.]top/myaccount/verify",
+            "domain": "xn--pypal-4ve[.]com[.]secure-session-auth[.]top",
+            "firewallRule": "deny tcp any host xn--pypal-4ve.com.secure-session-auth.top # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.528Z"
+    },
+    {
+      "id": "scan-1792509253475",
+      "user_id": "usr-analyst-01",
+      "scan_type": "email",
+      "content": "Your bank account will be suspended. Verify immediately.",
+      "result": "Suspicious Artifact // High Deception Probability",
+      "risk_level": "HIGH",
+      "risk_score": 68,
+      "naive_scanner_score": 72,
+      "recommendation": "Avoid interacting with links or attachments. Verify sender out-of-band via an official bookmarked website.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "Security Team <no-reply@notice-alert.com>",
+            "subject": "Important Account Notification",
+            "previewBody": "Your bank account will be suspended. Verify immediately.",
+            "ctaUrl": "https://portal-verification-session.top/login"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: Security Team <no-reply@notice-alert.com>",
+              "xrayReveals": "SMTP Return-Path: <bounce@notice-alert.com> [SPF: NEUTRAL / UNVERIFIED]",
+              "severity": "WARN",
+              "explanation": "Sender header inspected against Return-Path and SPF/DMARC alignment."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"Verify immediately\"",
+              "xrayReveals": "[URGENCY MANIPULATION +28 RISK] — Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender.",
+              "severity": "CRITICAL",
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"suspended\"",
+              "xrayReveals": "[FEAR MANIPULATION +24 RISK] — Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking.",
+              "severity": "CRITICAL",
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "id": "hs-kw-2",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"bank account\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +20 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"bank account\").",
+              "severity": "WARN",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"bank account\")."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 62
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 53
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 44
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "",
+            "subdomains": "",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "Verify immediately",
+              "category": "URGENCY",
+              "weight": 28,
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "phrase": "suspended",
+              "category": "FEAR",
+              "weight": 24,
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "phrase": "bank account",
+              "category": "CREDENTIAL",
+              "weight": 20,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"bank account\")."
+            }
+          ],
+          "matchedKeywordCount": 3
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [],
+          "entropy": {
+            "hostnameEntropy": 0,
+            "payloadEntropy": 4.29,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 0,
+            "subdomainDepth": 0,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 39,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 6,
+            "suspicious": 4,
+            "harmless": 76,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 72,
+            "vericoreXrayScore": 68,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "MULTI_VECTOR_SOCIAL_ENGINEERING: Combines urgency framing with credential harvesting prompts."
+            ]
+          },
+          "defangedIoc": {
+            "url": "Your bank account will be suspended[.] Verify immediately[.]",
+            "domain": "notice-alert[.]com",
+            "firewallRule": "reject smtp sender notice-alert.com # VERICORE AUTO-RULE"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.475Z"
+    },
+    {
+      "id": "scan-1792509253421",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "http://secure-paypal-login-free.com",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 68,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "http://secure-paypal-login-free.com",
+            "protocolBadge": "Unencrypted HTTP Connection",
+            "brandClaimed": "PayPal",
+            "pageHeadline": "Sign in to your PayPal account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "http://secure-paypal-login-free.com",
+              "xrayReveals": "BRAND IMPERSONATION! Claims PayPal (paypal.com) -> Actual Destination: secure-paypal-login-free.com",
+              "severity": "CRITICAL",
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"secure-paypal\"",
+              "xrayReveals": "[URL_TOKEN MANIPULATION +26 RISK] — Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits.",
+              "severity": "CRITICAL",
+              "explanation": "Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"login-free\"",
+              "xrayReveals": "[URL_TOKEN MANIPULATION +22 RISK] — Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits.",
+              "severity": "CRITICAL",
+              "explanation": "Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 45
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "f",
+                "codePoint": "U+0066",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "f"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "secure-paypal-login-free.com",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "COMBO_SQUATTING",
+              "distance": 18,
+              "isImpersonation": true,
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "secure-paypal",
+              "category": "URL_TOKEN",
+              "weight": 26,
+              "explanation": "Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits."
+            },
+            {
+              "phrase": "login-free",
+              "category": "URL_TOKEN",
+              "weight": 22,
+              "explanation": "Deceptive path/subdomain token (\"login-free\") frequently used in credential harvesting kits."
+            }
+          ],
+          "matchedKeywordCount": 2
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "http://",
+              "status": "WARN",
+              "detail": "Unencrypted plaintext HTTP transport; credentials travel in cleartext."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "secure-paypal-login-free.com",
+              "status": "CRITICAL",
+              "detail": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"secure-paypal-login-free.com\"."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".com",
+              "status": "SAFE",
+              "detail": "Standard registry TLD (.com)."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 3.92,
+            "payloadEntropy": 4.23,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 35,
+            "subdomainDepth": 1,
+            "hyphenCount": 3
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 25,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 68,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 31,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "MULTI_VECTOR_SOCIAL_ENGINEERING: Combines urgency framing with credential harvesting prompts."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxp://secure-paypal-login-free[.]com",
+            "domain": "secure-paypal-login-free[.]com",
+            "firewallRule": "deny tcp any host secure-paypal-login-free.com # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T15:14:13.421Z"
+    },
+    {
+      "id": "scan-seed-1",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 20,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "PayPal",
+            "pageHeadline": "Sign in to your PayPal account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://pаypal.com.secure-session-auth.top/myaccount/verify?session=99812",
+              "xrayReveals": "IDN HOMOGRAPH TRAP! Contains non-Latin 'а' (U+0430) mimicking PayPal -> Real Host: secure-session-auth.top",
+              "severity": "CRITICAL",
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\".top\"",
+              "xrayReveals": "[SUSPICIOUS_TLD MANIPULATION +20 RISK] — High-abuse top-level domain (\".top\") favored by disposable phishing campaigns.",
+              "severity": "WARN",
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 45
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "а",
+                "codePoint": "U+0430",
+                "isSpoof": true,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              }
+            ],
+            "unicodeSpoofs": [
+              {
+                "index": 1,
+                "char": "а",
+                "codePoint": "U+0430",
+                "looksLike": "a",
+                "description": "Cyrillic Small Letter A (U+0430)"
+              }
+            ],
+            "isPunycode": true,
+            "regDomain": "secure-session-auth.top",
+            "subdomains": "pаypal.com",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "IDN_HOMOGRAPH_SPOOF",
+              "distance": 18,
+              "isImpersonation": true,
+              "explanation": "Uses deceptive non-Latin homograph characters to visually impersonate PayPal (paypal.com)."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": ".top",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 20,
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 1
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "SUBDOMAIN CHAIN",
+              "value": "pаypal.com",
+              "status": "WARN",
+              "detail": "Prefix hierarchy controlled by the registrable root domain."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "secure-session-auth.top",
+              "status": "CRITICAL",
+              "detail": "Contains non-ASCII homoglyph characters to spoof visual identity."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".top",
+              "status": "CRITICAL",
+              "detail": "High-risk TLD (.top) with elevated phishing-to-legitimate domain ratio."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/myaccount/verify",
+              "status": "WARN",
+              "detail": "Path targets authentication or credential-entry workflow."
+            },
+            {
+              "part": "QUERY / TRACKING PAYLOAD",
+              "value": "?session=99812",
+              "status": "WARN",
+              "detail": "URL query string parameters."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 4.09,
+            "payloadEntropy": 4.53,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 73,
+            "subdomainDepth": 3,
+            "hyphenCount": 5
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 6,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 20,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 79,
+            "bypassedNaiveScanner": true,
+            "evasionFlags": [
+              "HTTPS_TLS_ILLUSION: Uses HTTPS encryption on a deceptive domain to appear \"Padlock Safe\".",
+              "IDN_HOMOGRAPH_EVASION: Uses non-Latin lookalike characters that bypass ASCII keyword filters."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://pаypal[.]com[.]secure-session-auth[.]top/myaccount/verify?session=99812",
+            "domain": "xn--pypal-4ve[.]com[.]secure-session-auth[.]top",
+            "firewallRule": "deny tcp any host xn--pypal-4ve.com.secure-session-auth.top # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-19T16:35:00Z"
+    },
+    {
+      "id": "scan-seed-2",
+      "user_id": "usr-emp-02",
+      "scan_type": "email",
+      "content": "From: PayPal Security <security@paypal.com>\nReturn-Path: <bounce-alert@mail-auth-relay.xyz>\nReply-To: <verify-now@support-desk-pp.top>\nAuthentication-Results: mx.google.com; spf=fail; dkim=fail; dmarc=fail\nSubject: URGENT: Your account suspended due to unauthorized login attempt\n\nDear Customer,\nWe detected an unauthorized login attempt on your account. Your account suspended within 24 hours unless you verify immediately and update payment method.\n\nClick here to confirm your identity: http://login-secure-paypal-update.xyz/webscr",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 80,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "email",
+            "displayFrom": "PayPal Security <security@paypal.com>",
+            "subject": "URGENT: Your account suspended due to unauthorized login attempt",
+            "previewBody": "From: PayPal Security <security@paypal.com>\nReturn-Path: <bounce-alert@mail-auth-relay.xyz>\nReply-To: <verify-now@support-desk-pp.top>\nAuthentication-Results: mx.google.com; spf=fail; dkim=fail; dmarc=fail\nSubject: URGENT: Your account suspended due to unauthorized login attempt\n\nDear Customer,\nWe detected an unauthorized login attempt on your account. Your account suspended within 24 hours unless you verify immediately and update payment method.\n\nClick here to confirm your identity: http://login-secure-paypal-update.xyz/webscr",
+            "ctaUrl": "http://login-secure-paypal-update.xyz/webscr"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-sender",
+              "slot": "HEADER_IDENTITY",
+              "victimSees": "From: PayPal Security <security@paypal.com>",
+              "xrayReveals": "SPOOFED ENVELOPE! Return-Path: <bounce-alert@mail-auth-relay.xyz> [SPF: FAIL | DMARC: FAIL (Reject/Quarantine)]",
+              "severity": "CRITICAL",
+              "explanation": "The display sender address does not match the actual SMTP server Return-Path that transmitted the message."
+            },
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "http://login-secure-paypal-update.xyz/webscr",
+              "xrayReveals": "BRAND IMPERSONATION! Claims PayPal (paypal.com) -> Actual Destination: login-secure-paypal-update.xyz",
+              "severity": "CRITICAL",
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"login-secure-paypal-update.xyz\"."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"verify immediately\"",
+              "xrayReveals": "[URGENCY MANIPULATION +28 RISK] — Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender.",
+              "severity": "CRITICAL",
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"account suspended\"",
+              "xrayReveals": "[FEAR MANIPULATION +26 RISK] — Triggers threat-avoidance anxiety (\"account suspended\") to override critical thinking.",
+              "severity": "CRITICAL",
+              "explanation": "Triggers threat-avoidance anxiety (\"account suspended\") to override critical thinking."
+            },
+            {
+              "id": "hs-kw-2",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"suspended\"",
+              "xrayReveals": "[FEAR MANIPULATION +24 RISK] — Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking.",
+              "severity": "CRITICAL",
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "id": "hs-kw-3",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"unauthorized login attempt\"",
+              "xrayReveals": "[FEAR MANIPULATION +22 RISK] — Triggers threat-avoidance anxiety (\"unauthorized login attempt\") to override critical thinking.",
+              "severity": "CRITICAL",
+              "explanation": "Triggers threat-avoidance anxiety (\"unauthorized login attempt\") to override critical thinking."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 100
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 100
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 100
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 92
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "n",
+                "codePoint": "U+006E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "n"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "s",
+                "codePoint": "U+0073",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "s"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "r",
+                "codePoint": "U+0072",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "r"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "l",
+                "codePoint": "U+006C",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "-",
+                "codePoint": "U+002D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "-"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "p",
+                "codePoint": "U+0070",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "p"
+              },
+              {
+                "char": "d",
+                "codePoint": "U+0064",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "d"
+              },
+              {
+                "char": "a",
+                "codePoint": "U+0061",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "a"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "e",
+                "codePoint": "U+0065",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "e"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "x",
+                "codePoint": "U+0078",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "x"
+              },
+              {
+                "char": "y",
+                "codePoint": "U+0079",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "y"
+              },
+              {
+                "char": "z",
+                "codePoint": "U+007A",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "z"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "login-secure-paypal-update.xyz",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "PayPal",
+              "officialDomain": "paypal.com",
+              "impersonationType": "COMBO_SQUATTING",
+              "distance": 20,
+              "isImpersonation": true,
+              "explanation": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"login-secure-paypal-update.xyz\"."
+            }
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "verify immediately",
+              "category": "URGENCY",
+              "weight": 28,
+              "explanation": "Creates artificial time pressure (\"verify immediately\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "phrase": "account suspended",
+              "category": "FEAR",
+              "weight": 26,
+              "explanation": "Triggers threat-avoidance anxiety (\"account suspended\") to override critical thinking."
+            },
+            {
+              "phrase": "suspended",
+              "category": "FEAR",
+              "weight": 24,
+              "explanation": "Triggers threat-avoidance anxiety (\"suspended\") to override critical thinking."
+            },
+            {
+              "phrase": "unauthorized login attempt",
+              "category": "FEAR",
+              "weight": 22,
+              "explanation": "Triggers threat-avoidance anxiety (\"unauthorized login attempt\") to override critical thinking."
+            },
+            {
+              "phrase": "within 24 hours",
+              "category": "URGENCY",
+              "weight": 18,
+              "explanation": "Creates artificial time pressure (\"within 24 hours\") to panic the victim into acting before verifying the sender."
+            },
+            {
+              "phrase": "confirm your identity",
+              "category": "CREDENTIAL",
+              "weight": 20,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"confirm your identity\")."
+            },
+            {
+              "phrase": "update payment method",
+              "category": "CREDENTIAL",
+              "weight": 22,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"update payment method\")."
+            },
+            {
+              "phrase": "login-secure",
+              "category": "URL_TOKEN",
+              "weight": 20,
+              "explanation": "Deceptive path/subdomain token (\"login-secure\") frequently used in credential harvesting kits."
+            },
+            {
+              "phrase": "secure-paypal",
+              "category": "URL_TOKEN",
+              "weight": 26,
+              "explanation": "Deceptive path/subdomain token (\"secure-paypal\") frequently used in credential harvesting kits."
+            },
+            {
+              "phrase": "webscr",
+              "category": "URL_TOKEN",
+              "weight": 25,
+              "explanation": "Deceptive path/subdomain token (\"webscr\") frequently used in credential harvesting kits."
+            },
+            {
+              "phrase": ".xyz",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 18,
+              "explanation": "High-abuse top-level domain (\".xyz\") favored by disposable phishing campaigns."
+            },
+            {
+              "phrase": ".top",
+              "category": "SUSPICIOUS_TLD",
+              "weight": 20,
+              "explanation": "High-abuse top-level domain (\".top\") favored by disposable phishing campaigns."
+            }
+          ],
+          "matchedKeywordCount": 12
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "http://",
+              "status": "WARN",
+              "detail": "Unencrypted plaintext HTTP transport; credentials travel in cleartext."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "login-secure-paypal-update.xyz",
+              "status": "CRITICAL",
+              "detail": "Embeds protected brand token \"paypal\" inside an unverified lookalike domain \"login-secure-paypal-update.xyz\"."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".xyz",
+              "status": "CRITICAL",
+              "detail": "High-risk TLD (.xyz) with elevated phishing-to-legitimate domain ratio."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/webscr",
+              "status": "WARN",
+              "detail": "Path targets authentication or credential-entry workflow."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 4.07,
+            "payloadEntropy": 5.03,
+            "dgaLikelihood": "HIGH (Random/DGA Pattern)",
+            "urlLength": 44,
+            "subdomainDepth": 1,
+            "hyphenCount": 3
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 24,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": true,
+            "fromRaw": "PayPal Security <security@paypal.com>",
+            "fromDomain": "paypal.com",
+            "returnPathRaw": "<bounce-alert@mail-auth-relay.xyz>",
+            "returnPathDomain": "mail-auth-relay.xyz",
+            "replyToRaw": "<verify-now@support-desk-pp.top>",
+            "replyToDomain": "support-desk-pp.top",
+            "subjectRaw": "URGENT: Your account suspended due to unauthorized login attempt",
+            "spfStatus": "FAIL",
+            "dkimStatus": "FAIL",
+            "dmarcStatus": "FAIL (Reject/Quarantine)",
+            "envelopeMismatch": true,
+            "replyToMismatch": true,
+            "hops": [
+              "from mail-gateway.external (paypal.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 80,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 19,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "ENVELOPE_SENDER_SPOOF: Display \"From\" (paypal.com) conflicts with actual SMTP \"Return-Path\" (mail-auth-relay.xyz).",
+              "REPLY_TO_HIJACK: Replies are silently diverted to external domain \"support-desk-pp.top\"."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxp://login-secure-paypal-update[.]xyz/webscr",
+            "domain": "login-secure-paypal-update[.]xyz",
+            "firewallRule": "deny tcp any host login-secure-paypal-update.xyz # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-19T18:05:00Z"
+    },
+    {
+      "id": "scan-seed-3",
+      "user_id": "usr-emp-03",
+      "scan_type": "qr",
+      "content": "http://185.220.101.44:8080/m365-qr-sso/login-secure?otp=required",
+      "result": "Critical Phishing Vector // Quarantine Advised",
+      "risk_level": "CRITICAL",
+      "risk_score": 99,
+      "naive_scanner_score": 38,
+      "recommendation": "DO NOT VISIT OR REPLY. Isolate artifact immediately, block registrable domain at firewall/DNS level, and rotate any credentials entered.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "qr",
+            "displayUrl": "http://185.220.101.44:8080/m365-qr-sso/login-secure?otp=required",
+            "protocolBadge": "Unencrypted HTTP Connection",
+            "brandClaimed": "185",
+            "pageHeadline": "Account Security Verification Portal"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "http://185.220.101.44:8080/m365-qr-sso/login-secure?otp=required",
+              "xrayReveals": "HTTP // Registrable Root: 101.44 | DNS: 185.220.101.44",
+              "severity": "WARN",
+              "explanation": "Dissects registrable root domain vs deceptive prefixes."
+            },
+            {
+              "id": "hs-kw-0",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"otp\"",
+              "xrayReveals": "[CREDENTIAL MANIPULATION +18 RISK] — Directly solicits sensitive authentication secrets or financial execution (\"otp\").",
+              "severity": "WARN",
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"otp\")."
+            },
+            {
+              "id": "hs-kw-1",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "\"login-secure\"",
+              "xrayReveals": "[URL_TOKEN MANIPULATION +20 RISK] — Deceptive path/subdomain token (\"login-secure\") frequently used in credential harvesting kits.",
+              "severity": "WARN",
+              "explanation": "Deceptive path/subdomain token (\"login-secure\") frequently used in credential harvesting kits."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 40
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 100
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "1",
+                "codePoint": "U+0031",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "8",
+                "codePoint": "U+0038",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "8"
+              },
+              {
+                "char": "5",
+                "codePoint": "U+0035",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "5"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "2",
+                "codePoint": "U+0032",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "2"
+              },
+              {
+                "char": "2",
+                "codePoint": "U+0032",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "2"
+              },
+              {
+                "char": "0",
+                "codePoint": "U+0030",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "1",
+                "codePoint": "U+0031",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": "0",
+                "codePoint": "U+0030",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "1",
+                "codePoint": "U+0031",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "l"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "4",
+                "codePoint": "U+0034",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "4"
+              },
+              {
+                "char": "4",
+                "codePoint": "U+0034",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "4"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "101.44",
+            "subdomains": "185.220",
+            "matchedBrand": null
+          },
+          "inlineHighlights": [
+            {
+              "phrase": "otp",
+              "category": "CREDENTIAL",
+              "weight": 18,
+              "explanation": "Directly solicits sensitive authentication secrets or financial execution (\"otp\")."
+            },
+            {
+              "phrase": "login-secure",
+              "category": "URL_TOKEN",
+              "weight": 20,
+              "explanation": "Deceptive path/subdomain token (\"login-secure\") frequently used in credential harvesting kits."
+            }
+          ],
+          "matchedKeywordCount": 2
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "http://",
+              "status": "WARN",
+              "detail": "Unencrypted plaintext HTTP transport; credentials travel in cleartext."
+            },
+            {
+              "part": "SUBDOMAIN CHAIN",
+              "value": "185.220",
+              "status": "WARN",
+              "detail": "Prefix hierarchy controlled by the registrable root domain."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "101.44",
+              "status": "CRITICAL",
+              "detail": "Raw IPv4 address used instead of registered domain name."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/m365-qr-sso/login-secure",
+              "status": "WARN",
+              "detail": "Path targets authentication or credential-entry workflow."
+            },
+            {
+              "part": "QUERY / TRACKING PAYLOAD",
+              "value": "?otp=required",
+              "status": "SAFE",
+              "detail": "URL query string parameters."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 2.7,
+            "payloadEntropy": 4.73,
+            "dgaLikelihood": "LOW (Natural Language)",
+            "urlLength": 64,
+            "subdomainDepth": 3,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": true,
+            "resolved": false,
+            "latencyMs": 0,
+            "aRecords": [
+              "185.220.101.44"
+            ],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Direct IPv4 host bypasses standard domain reputation & SSL CA checks."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 33,
+            "suspicious": 6,
+            "harmless": 47,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": [
+              "OpenPhish AI",
+              "PhishTank Feed",
+              "Google SafeBrowsing",
+              "CrowdStrike Falcon",
+              "Cloudflare Radar",
+              "ESET PhishGuard",
+              "BitDefender ThreatLab",
+              "Sophos Intelix",
+              "Fortinet FortiGuard",
+              "Netcraft Anti-Phishing"
+            ]
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "THREAT_MATCH_FOUND",
+            "threatType": "SOCIAL_ENGINEERING (DECEPTIVE_SITE)",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 38,
+            "vericoreXrayScore": 99,
+            "detectionDelta": 61,
+            "bypassedNaiveScanner": true,
+            "evasionFlags": [
+              "RAW_IPV4_ENDPOINT: Bypasses domain registrar & WHOIS reputation tracking."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxp://185[.]220[.]101[.]44:8080/m365-qr-sso/login-secure?otp=required",
+            "domain": "185[.]220[.]101[.]44",
+            "firewallRule": "deny tcp any host 185.220.101.44 # VERICORE AUTO-RULE (CRITICAL)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T06:20:00Z"
+    },
+    {
+      "id": "scan-seed-4",
+      "user_id": "usr-analyst-01",
+      "scan_type": "url",
+      "content": "https://github.com/security/advisories",
+      "result": "Verified Benign // No Deception Vectors Found",
+      "risk_level": "LOW",
+      "risk_score": 4,
+      "naive_scanner_score": 4,
+      "recommendation": "Safe to proceed. Domain structure, character encoding, and cryptographic headers show no manipulation.",
+      "forensic_layers": {
+        "layer1_surface": {
+          "title": "Layer 1 // Surface Illusion vs. X-Ray Truth",
+          "subtitle": "Drag the X-Ray Curtain or hover the Spotlight Lens to peel back how the attacker wants you to see this artifact.",
+          "victimSummary": {
+            "kind": "url",
+            "displayUrl": "https://github.com/security/advisories",
+            "protocolBadge": "HTTPS Padlock Shown to Victim",
+            "brandClaimed": "GitHub",
+            "pageHeadline": "Sign in to your GitHub account"
+          },
+          "xrayHotspots": [
+            {
+              "id": "hs-domain",
+              "slot": "ADDRESS_BAR",
+              "victimSees": "https://github.com/security/advisories",
+              "xrayReveals": "HTTPS // Registrable Root: github.com | DNS: Unresolved",
+              "severity": "SAFE",
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            },
+            {
+              "id": "hs-content-clean",
+              "slot": "BODY_TRIGGER",
+              "victimSees": "https://github.com/security/advisories",
+              "xrayReveals": "[LINGUISTIC SCAN CLEAN] Zero coercive, fear-inducing, or credential-harvesting phrases detected.",
+              "severity": "SAFE",
+              "explanation": "Evaluates whether attacker intentionally stripped spam keywords to bypass naive filters."
+            }
+          ]
+        },
+        "layer2_deception": {
+          "title": "Layer 2 // Psychological & Visual Deception Mask",
+          "subtitle": "Social Engineering 6-Axis Radar, Levenshtein Brand Impersonation, and Unicode Homograph Character Inspection.",
+          "radarAxes": [
+            {
+              "axis": "Urgency & Coercion",
+              "score": 0
+            },
+            {
+              "axis": "Authority Spoofing",
+              "score": 0
+            },
+            {
+              "axis": "Fear & Consequence",
+              "score": 0
+            },
+            {
+              "axis": "Scarcity & Bait",
+              "score": 0
+            },
+            {
+              "axis": "Credential Harvesting",
+              "score": 0
+            },
+            {
+              "axis": "Visual / Link Deception",
+              "score": 0
+            }
+          ],
+          "homographAnalysis": {
+            "charBreakdown": [
+              {
+                "char": "g",
+                "codePoint": "U+0067",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "g"
+              },
+              {
+                "char": "i",
+                "codePoint": "U+0069",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "i"
+              },
+              {
+                "char": "t",
+                "codePoint": "U+0074",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "t"
+              },
+              {
+                "char": "h",
+                "codePoint": "U+0068",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "h"
+              },
+              {
+                "char": "u",
+                "codePoint": "U+0075",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "u"
+              },
+              {
+                "char": "b",
+                "codePoint": "U+0062",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "b"
+              },
+              {
+                "char": ".",
+                "codePoint": "U+002E",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "."
+              },
+              {
+                "char": "c",
+                "codePoint": "U+0063",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "c"
+              },
+              {
+                "char": "o",
+                "codePoint": "U+006F",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "o"
+              },
+              {
+                "char": "m",
+                "codePoint": "U+006D",
+                "isSpoof": false,
+                "isDigitSubstitution": false,
+                "looksLike": "m"
+              }
+            ],
+            "unicodeSpoofs": [],
+            "isPunycode": false,
+            "regDomain": "github.com",
+            "subdomains": "",
+            "matchedBrand": {
+              "brand": "GitHub",
+              "officialDomain": "github.com",
+              "impersonationType": "OFFICIAL_VERIFIED",
+              "distance": 0,
+              "isImpersonation": false,
+              "explanation": "Exact verified match for official GitHub domain (github.com)."
+            }
+          },
+          "inlineHighlights": [],
+          "matchedKeywordCount": 0
+        },
+        "layer3_wire": {
+          "title": "Layer 3 // Protocol, Entropy & Wire Forensics",
+          "subtitle": "Anatomical URL Decomposition Tree, Shannon Information Entropy, Live DNS Resolution, and SMTP Header Alignment.",
+          "urlAnatomy": [
+            {
+              "part": "PROTOCOL",
+              "value": "https://",
+              "status": "SAFE",
+              "detail": "TLS encrypted transport (Note: 84% of modern phishing sites also use free DV HTTPS certificates)."
+            },
+            {
+              "part": "REGISTRABLE DOMAIN",
+              "value": "github.com",
+              "status": "SAFE",
+              "detail": "Core registrable destination domain."
+            },
+            {
+              "part": "TOP-LEVEL DOMAIN (TLD)",
+              "value": ".com",
+              "status": "SAFE",
+              "detail": "Standard registry TLD (.com)."
+            },
+            {
+              "part": "RESOURCE PATH",
+              "value": "/security/advisories",
+              "status": "SAFE",
+              "detail": "Standard resource route."
+            }
+          ],
+          "entropy": {
+            "hostnameEntropy": 3.32,
+            "payloadEntropy": 4.09,
+            "dgaLikelihood": "MODERATE",
+            "urlLength": 38,
+            "subdomainDepth": 1,
+            "hyphenCount": 0
+          },
+          "dnsTelemetry": {
+            "isRawIp": false,
+            "resolved": false,
+            "latencyMs": 24,
+            "aRecords": [],
+            "mxRecords": [],
+            "txtRecords": [],
+            "spfPresent": false,
+            "dmarcPresent": false,
+            "note": "Domain does not resolve on public DNS (NXDOMAIN / Ephemeral fast-flux phishing host)."
+          },
+          "headerForensics": {
+            "hasExplicitHeaders": false,
+            "fromRaw": "Security Team <no-reply@notice-alert.com>",
+            "fromDomain": "notice-alert.com",
+            "returnPathRaw": "<bounce@notice-alert.com>",
+            "returnPathDomain": null,
+            "replyToRaw": null,
+            "replyToDomain": null,
+            "subjectRaw": "Important Account Notification",
+            "spfStatus": "NEUTRAL / UNVERIFIED",
+            "dkimStatus": "UNSPECIFIED",
+            "dmarcStatus": "UNSPECIFIED",
+            "envelopeMismatch": false,
+            "replyToMismatch": false,
+            "hops": [
+              "from mail-gateway.external (notice-alert.com) by mx.vericore.sec with ESMTPS",
+              "from client-node [185.220.101.19] (helo=outbound-mailer.top)"
+            ]
+          }
+        },
+        "layer4_intel": {
+          "title": "Layer 4 // Global Threat Intel & Red-Team vs. Blue-Team Verdict",
+          "subtitle": "VirusTotal 92-Engine Consensus, Google Safe Browsing Verdict, Naive Scanner Bypass Comparison, and Defanged IOCs.",
+          "virusTotal": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "malicious": 0,
+            "suspicious": 0,
+            "harmless": 86,
+            "undetected": 6,
+            "totalEngines": 92,
+            "flaggedVendors": []
+          },
+          "googleSafeBrowsing": {
+            "mode": "HYBRID_INTEL_ENGINE",
+            "status": "CLEAN",
+            "threatType": "NONE",
+            "platformType": "ANY_PLATFORM"
+          },
+          "redVsBlue": {
+            "naiveScannerScore": 4,
+            "vericoreXrayScore": 4,
+            "detectionDelta": 0,
+            "bypassedNaiveScanner": false,
+            "evasionFlags": [
+              "NO_EVASION_DETECTED: Artifact passes structural and lexical authenticity checks."
+            ]
+          },
+          "defangedIoc": {
+            "url": "hxxps://github[.]com/security/advisories",
+            "domain": "github[.]com",
+            "firewallRule": "deny tcp any host github.com # VERICORE AUTO-RULE (LOW)"
+          }
+        }
+      },
+      "created_at": "2026-10-20T07:45:00Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rep-2026-004",
+      "user_id": "usr-analyst-01",
+      "scan_id": "scan-1792509253421",
+      "report_type": "PRD Verification Test Report",
+      "target_artifact": "http://secure-paypal-login-free.com",
+      "risk_level": "HIGH",
+      "status": "BLOCKLISTED",
+      "details": "Automated E2E test report verifying PRD Reports Table & SOC workflow.",
+      "analyst_notes": "Verified by automated E2E test.",
+      "created_at": "2026-10-20T15:14:13.628Z"
+    },
+    {
+      "id": "rep-2026-001",
+      "user_id": "usr-analyst-01",
+      "scan_id": "scan-seed-1",
+      "report_type": "Brand Impersonation & Homograph Attack",
+      "target_artifact": "https://pаypal.com.secure-session-auth.top/myaccount/verify",
+      "risk_level": "CRITICAL",
+      "status": "BLOCKLISTED",
+      "details": "Uses Cyrillic small letter \"а\" (U+0430) inside paypal lookalike subdomain on a .top TLD to harvest banking credentials and 2FA OTP tokens.",
+      "analyst_notes": "Confirmed active AitM reverse-proxy kit. Added domain & IP range to global firewall blocklist.",
+      "created_at": "2026-10-19T16:40:00Z"
+    },
+    {
+      "id": "rep-2026-002",
+      "user_id": "usr-emp-02",
+      "scan_id": "scan-seed-2",
+      "report_type": "Executive Wire Fraud (BEC) & SPF Spoofing",
+      "target_artifact": "From: CEO Office <ceo@company-portal.com> (Return-Path: <bounce@mail-relay-88.xyz>)",
+      "risk_level": "HIGH",
+      "status": "INVESTIGATING",
+      "details": "Urgent invoice wire request bypassing basic keyword filters using polite corporate language, caught by SPF/Return-Path mismatch and authority coercion score.",
+      "analyst_notes": "Tracing mail relay ASN and notifying finance department.",
+      "created_at": "2026-10-19T18:12:00Z"
+    },
+    {
+      "id": "rep-2026-003",
+      "user_id": "usr-emp-03",
+      "scan_id": "scan-seed-3",
+      "report_type": "QR Code Quishing (Fake Microsoft 365 MFA Re-enrollment)",
+      "target_artifact": "http://185.220.101.44:8080/m365-qr-sso/auth?token=9f8a7b6c5d4e",
+      "risk_level": "CRITICAL",
+      "status": "OPEN",
+      "details": "Embedded QR code inside PDF attachment routes mobile browser directly to raw IPv4 host harvesting Microsoft 365 session cookies.",
+      "analyst_notes": "Pending sinkhole takedown request.",
+      "created_at": "2026-10-20T06:30:00Z"
+    }
+  ],
+  "suspicious_keywords": [
+    {
+      "id": "kw-1",
+      "keyword": "verify immediately",
+      "category": "URGENCY",
+      "weight": 28,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-2",
+      "keyword": "account suspended",
+      "category": "FEAR",
+      "weight": 26,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-2b",
+      "keyword": "suspended",
+      "category": "FEAR",
+      "weight": 24,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-2c",
+      "keyword": "bank account",
+      "category": "CREDENTIAL",
+      "weight": 20,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-3",
+      "keyword": "unauthorized login attempt",
+      "category": "FEAR",
+      "weight": 22,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-4",
+      "keyword": "within 24 hours",
+      "category": "URGENCY",
+      "weight": 18,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-5",
+      "keyword": "confirm your identity",
+      "category": "CREDENTIAL",
+      "weight": 20,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-6",
+      "keyword": "update payment method",
+      "category": "CREDENTIAL",
+      "weight": 22,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-7",
+      "keyword": "security alert",
+      "category": "AUTHORITY",
+      "weight": 14,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-8",
+      "keyword": "wire transfer",
+      "category": "CREDENTIAL",
+      "weight": 24,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-9",
+      "keyword": "seed phrase",
+      "category": "CREDENTIAL",
+      "weight": 35,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-10",
+      "keyword": "claim your reward",
+      "category": "SCARCITY",
+      "weight": 18,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-11",
+      "keyword": "otp",
+      "category": "CREDENTIAL",
+      "weight": 18,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-12",
+      "keyword": "password expired",
+      "category": "FEAR",
+      "weight": 20,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-13",
+      "keyword": "login-secure",
+      "category": "URL_TOKEN",
+      "weight": 20,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-13b",
+      "keyword": "secure-paypal",
+      "category": "URL_TOKEN",
+      "weight": 26,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-13c",
+      "keyword": "login-free",
+      "category": "URL_TOKEN",
+      "weight": 22,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-14",
+      "keyword": "verify-account",
+      "category": "URL_TOKEN",
+      "weight": 22,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-15",
+      "keyword": "webscr",
+      "category": "URL_TOKEN",
+      "weight": 25,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-16",
+      "keyword": ".xyz",
+      "category": "SUSPICIOUS_TLD",
+      "weight": 18,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-17",
+      "keyword": ".top",
+      "category": "SUSPICIOUS_TLD",
+      "weight": 20,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-18",
+      "keyword": ".zip",
+      "category": "SUSPICIOUS_TLD",
+      "weight": 24,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-19",
+      "keyword": ".tk",
+      "category": "SUSPICIOUS_TLD",
+      "weight": 26,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    },
+    {
+      "id": "kw-20",
+      "keyword": ".ru",
+      "category": "SUSPICIOUS_TLD",
+      "weight": 15,
+      "active": true,
+      "added_by": "system",
+      "created_at": "2026-10-01T09:00:00Z"
+    }
+  ]
+}
